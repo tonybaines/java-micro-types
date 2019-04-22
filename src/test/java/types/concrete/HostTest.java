@@ -1,9 +1,10 @@
 package types.concrete;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 import org.junit.Test;
 import types.TypeTests;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class HostTest extends TypeTests<Host> {
     @Test
