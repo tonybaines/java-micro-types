@@ -1,13 +1,14 @@
 package types;
 
+import org.junit.Test;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import org.junit.Test;
 
 public abstract class TypeTests<T> {
 
     @Test
-    public void theNULLValueIsReturnedWhenAppropriate() throws Exception {
+    public void theNULLValueIsReturnedWhenAppropriate() {
         assertThat(fromString(null), is(nullValue()));
         assertThat(fromString(""), is(nullValue()));
         assertThat(fromString("  "), is(nullValue()));

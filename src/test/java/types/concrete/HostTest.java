@@ -8,12 +8,12 @@ import static org.junit.Assert.assertThat;
 
 public class HostTest extends TypeTests<Host> {
     @Test
-    public void aValidHostnameYieldsAValidHost() throws Exception {
+    public void aValidHostnameYieldsAValidHost() {
         assertThat(Host.is("localhost").isValid(), is(true));
     }
 
     @Test
-    public void anInvalidHostnameYieldsAInvalidHost() throws Exception {
+    public void anInvalidHostnameYieldsAInvalidHost() {
         assertThat(Host.is("blarg.moc").isValid(), is(false));
     }
 
